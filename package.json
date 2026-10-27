@@ -1,0 +1,1 @@
+{"name":"harvestao","version":"0.2.0","private":true,"type":"module","scripts":{"test":"node --test simulation.test.js","check":"node --check game.js && node --check world.js && node --check simulation.js && node --check controls.js"}}
