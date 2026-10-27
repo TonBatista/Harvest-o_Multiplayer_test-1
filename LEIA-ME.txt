@@ -1,0 +1,29 @@
+HARVESTÃO — TESTE MULTIPLAYER EXPERIMENTAL (2 CELULARES)
+
+O que faz: cria sala com código e mostra o outro personagem andando.
+O que NÃO faz: sincronizar plantações, dinheiro, inventário, dias, animais ou salvar partidas online.
+Depende do servidor público PeerJS e de conexão direta WebRTC; pode falhar em algumas redes móveis.
+
+SEGURANÇA: NÃO substitua arquivos no site principal. NÃO apague o backup.
+
+ARQUIVOS INCLUÍDOS: index.html, world.js, multiplayer.js.
+Os outros arquivos do jogo original continuam necessários: game.js, controls.js,
+simulation.js, style.css, three.module.js e demais arquivos existentes.
+
+COMO TESTAR SEM AFETAR O JOGO PUBLICADO:
+1. Crie uma pasta separada chamada harvestao-teste.
+2. Copie TODOS os arquivos da pasta original do jogo para ela.
+3. Dentro da pasta de teste, substitua APENAS index.html e world.js pelos deste ZIP;
+   acrescente multiplayer.js.
+4. Publique essa pasta em um site HTTPS DE TESTE separado (por exemplo,
+   um repositório GitHub Pages diferente, não o repositório principal).
+   Abrir index.html diretamente do computador pode não funcionar.
+5. Em dois celulares, abra a URL HTTPS de teste. Um toca 'Criar sala',
+   envia o código; outro digita o código e toca 'Entrar'.
+6. Cada celular controla seu próprio personagem; o outro aparece no cenário.
+
+Este é um protótipo de código, não foi validado em dois celulares reais.
+Não há servidor de jogo autoritativo, autenticação nem proteção contra trapaças.
+O serviço PeerJS público pode estar indisponível; a gratuidade não é garantida.
+
+IMPORTANTE: Esta versão NÃO deve ser publicada como multiplayer pronto.
